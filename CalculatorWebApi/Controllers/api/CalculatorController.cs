@@ -12,7 +12,6 @@ namespace CalculatorWebApi.Controllers.api
         // GET api/<controller>
 
         [HttpGet]
-
         public double Calculate(double firstvalue, double secondvalue, string operation)
         {
             if (secondvalue == 0 && operation.ToLower() == "divide")
@@ -36,9 +35,7 @@ namespace CalculatorWebApi.Controllers.api
                     output = firstvalue / secondvalue;
                     break;
             }
-
             return output;
-
         }
     }
 }
